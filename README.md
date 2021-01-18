@@ -1,41 +1,37 @@
+# Presidential election
 
-# Projet SAS
+Create an application to elect a president after a voting and election process. Knowing that the process goes through several rounds of presidential elections.
 
-Election Présidentielle
+The application should provide the following steps:
 
-Créer une application pour élire un président après un processus de vote et d'élection. Sachant que le processus passe par plusieurs tours d'élection présidentielle.
+Obtaining the list of presidents nominated for the presidential elections (dynamic list - minimum 5) Obtaining the list of voters by their CIN identifiers (dynamic list - minimum 10)
 
-L'application doit fournir les étapes suivantes :
+First round :
 
-Obtention de la liste des présidents nominées aux élections présidentielles(liste dynamique - minimum 5)
-Obtention de la liste des électeurs par leurs identifiant CIN (liste dynamique - minimum 10)
+The first round of elections will consist of a vote by each voter for a nominated president of choice.
 
-Premier tour :
+Each voter will be able to choose a nominated president from the list of nominated presidents already introduced.
 
-Le premier tour des élections va consister d’un vote de chaque électeur pour un président nominé de choix.
+After the voting process, the president with a percentage of votes less than 15% will be excluded.
 
-Chaque électeur va pouvoir choisir un président nominé depuis la liste des présidents nominés déjà introduits.
+N.B: if all the nominated presidents have a number of tied votes, the round must be repeated.
 
-Après le processus de vote, le président ayant un pourcentage de votes moins de 15% sera exclu.
+Second turn :
 
-N.B: si tous les présidents nominés ont un nombre de votes ex aequo, le tour doit être refait.
+The second round of elections will consist of a vote by each voter for a nominated president of choice except those nominees already excluded since the first round.
 
-Deuxième tour : 
+Each voter will be able to choose a nominated president from the list of remaining nominated presidents.
 
-Le deuxième tour des élections va consister d’un vote de chaque électeur pour un président nominé de choix sauf les présidents nominés déjà exclus depuis le premier tour.
+After the voting process, the president with the fewest votes will be excluded.
 
-Chaque électeur va pouvoir choisir un président nominé depuis la liste des présidents nominés qui restent.
+N.B: if all the nominated presidents have a number of tied votes, the round must be repeated.
 
-Après le processus de vote, le président ayant le moins de votes sera exclu.
+Third round:
 
-N.B: si tous les présidents nominés ont un nombre de votes ex aequo, le tour doit être refait.
+The third round of elections will consist of a vote by each voter for a nominee of choice except those nominees already excluded since the second round.
 
-Troisième tour :
+Each voter will be able to choose a nominated president from the list of remaining nominated presidents.
 
-Le troisième tour des élections va consister d’un vote de chaque électeur pour un président nominé de choix sauf les présidents nominés déjà exclus depuis le deuxième tour.
+After the voting process, the chair with the most votes will be elected as chair.
 
-Chaque électeur va pouvoir choisir un président nominé depuis la liste des présidents nominés qui restent.
-
-Après le processus de vote, le président ayant le plus de votes sera élu comme président.
-
-N.B: si deux ou plusieurs présidents nominés ont un nombre de votes maximale et ex aequo, le tour doit être refait.
+N.B: if two or more nominated presidents have a maximum number of votes and tied, the round must be repeated.
